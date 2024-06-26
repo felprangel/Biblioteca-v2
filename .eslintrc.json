@@ -1,3 +1,35 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "plugin:react/recommended",
+    "eslint:recommended",
+    "standard",
+    "prettier/standard",
+    "prettier/react"
+  ],
+  "plugins": [
+    "react",
+    "prettier"
+  ],
+  "rules": {
+    "no-unused-vars": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "space-before-function-paren":"off",
+    "no-use-before-define":"off",
+    "react/no-unescaped-entities": "off",
+    "camelcase": "off",
+    "linebreak-style": 0,
+    "react/display-name": "off",
+    "prefer-const":"off",
+    "array-callback-return":"off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "off",
+    "multiline-ternary":"off",
+    "max-len": ["error", {"code": 120, "ignoreUrls": true,"ignoreStrings": true}],
+    "no-useless-escape":"off"
+  }
 }
