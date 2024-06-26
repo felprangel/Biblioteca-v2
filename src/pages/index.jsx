@@ -5,7 +5,7 @@ const Teste = () => {
 	return (
 		<Container>
 			<Cabecalho />
-			<Main>Hello World</Main>
+			<Main></Main>
 		</Container>
 	)
 }
