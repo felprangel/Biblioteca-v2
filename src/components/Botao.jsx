@@ -1,11 +1,10 @@
-import { CircularProgress } from '@mui/material'
 import styled from 'styled-components'
 
 export const Botao = props => {
   return (
     <BotaoStyle>
       <span className="destaque">
-        {props.isLoading ? <CircularProgress className="circular" /> : <>{props.texto}</>}
+        {props.texto}
       </span>
       {props.isLoading || props.children}
     </BotaoStyle>
