@@ -1,14 +1,16 @@
 import styled from 'styled-components'
 
-import Cabecalho from '@/components/Cabecalho'
 import { Botao } from '@/components/Botao'
+import Cabecalho from '@/components/Cabecalho'
 
 const PaginaInicial = () => {
   return (
     <Container>
       <Cabecalho />
       <Main>
-        <Botao>+ Adicionar Livro</Botao>
+        <ContainerBotao>
+          <Botao>+ Adicionar Livro</Botao>
+        </ContainerBotao>
       </Main>
     </Container>
   )
@@ -24,6 +26,12 @@ const Container = styled.div`
 const Main = styled.main`
   background-color: var(--cinza);
   box-shadow: inset 0px 5px 15px -3px var(--cor-sombra);
+`
+
+const ContainerBotao = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 export default PaginaInicial
