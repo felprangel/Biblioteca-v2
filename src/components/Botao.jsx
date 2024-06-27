@@ -10,8 +10,8 @@ export const Botao = props => {
 }
 
 const BotaoStyle = styled.button`
-  min-height: 3rem;
   padding: 0.7em 1em;
+  margin: 1.5em 0;
 
   font-size: 1.4em;
   font-weight: 600;
