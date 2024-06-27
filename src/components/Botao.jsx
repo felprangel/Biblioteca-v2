@@ -3,51 +3,30 @@ import styled from 'styled-components'
 export const Botao = props => {
   return (
     <BotaoStyle>
-      <span className="destaque">
-        {props.texto}
-      </span>
+      <span className="destaque">{props.texto}</span>
       {props.isLoading || props.children}
     </BotaoStyle>
   )
 }
 
 const BotaoStyle = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 100%;
   min-height: 3rem;
-  padding: 0.9rem 1rem;
+  padding: 0.7em 1em;
 
-  font-size: 0.9rem;
-  font-weight: 400;
+  font-size: 1.4em;
+  font-weight: 600;
 
   cursor: pointer;
 
-  box-shadow: 0px 4px 4px var(--cor-sombra);
   border: none;
-  border-radius: 0.4rem;
+  border-radius: 0.7em;
   background-color: var(--cinza);
-  svg {
-    font-size: 1.6rem;
-    margin-right: 0.3rem;
-  }
+  outline: none;
+  transition: 150ms linear;
   &:hover {
-    opacity: 0.8;
+    background-color: var(--cinza-escuro);
   }
   .destaque {
     text-transform: uppercase;
-  }
-  .circular {
-    width: 1rem !important;
-    height: 1rem !important;
-    color: var(--branco);
-    svg {
-      margin-right: 0;
-    }
-  }
-  &:disabled {
-    opacity: 0.7;
   }
 `
