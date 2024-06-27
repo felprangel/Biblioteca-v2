@@ -29,7 +29,6 @@ const BotaoStyle = styled.button`
   border: none;
   border-radius: 0.4rem;
   background-color: var(--cinza);
-  color: var(--preto);
   svg {
     font-size: 1.6rem;
     margin-right: 0.3rem;
