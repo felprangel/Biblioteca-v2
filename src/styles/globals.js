@@ -4,8 +4,9 @@ export const GlobalStyle = createGlobalStyle`
     :root {
         --cor-sombra: rgba(0, 0, 0, 0.1);
         --preto: black;
-        --cinza: #F0EEF1;
         --branco: #FFFBFB;
+        --cinza: #F0EEF1;
+        --cinza-escuro: #D8D8D8;
     }
 
     * {
