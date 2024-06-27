@@ -9,7 +9,7 @@ const Cabecalho = () => {
 }
 
 const Header = styled.header`
-  background-color: #fffbfb;
+  background-color: var(--branco);
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -19,8 +19,8 @@ const Container = styled.div`
 `
 
 const Main = styled.main`
-  background-color: #f0eef1;
-  box-shadow: inset 0px 5px 15px -3px rgba(0, 0, 0, 0.1);
+  background-color: var(--cinza);
+  box-shadow: inset 0px 5px 15px -3px var(--cor-sombra);
 `
 
 export default PaginaInicial
