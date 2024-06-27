@@ -1,6 +1,6 @@
 import { CircularProgress } from '@mui/material'
 
-const Botao = props => {
+export const Botao = props => {
   return (
     <BotaoStyle>
       <span className="destaque">
