@@ -1,12 +1,15 @@
 import styled from 'styled-components'
 
 import Cabecalho from '@/components/Cabecalho'
+import { Botao } from '@/components/Botao'
 
 const PaginaInicial = () => {
   return (
     <Container>
       <Cabecalho />
-      <Main></Main>
+      <Main>
+        <Botao>+ Adicionar Livro</Botao>
+      </Main>
     </Container>
   )
 }
