@@ -11,7 +11,7 @@ const Botao = props => {
   )
 }
 
-const BotaoStyle = styled(Botao)`
+const BotaoStyle = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
