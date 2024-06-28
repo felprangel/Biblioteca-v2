@@ -9,7 +9,7 @@ const CardLivro = props => {
       <h2>{props.autor}</h2>
       <h2>{props.paginas} Páginas</h2>
       <Botao>{props.status}</Botao>
-      <Botao>Remover</Botao>
+      <BotaoRemover>Remover</BotaoRemover>
     </Card>
   )
 }
@@ -29,6 +29,12 @@ const Card = styled.div`
     margin: 0;
     font-size: 1.3em;
     font-weight: 600;
+  }
+`
+
+const BotaoRemover = styled(Botao)`
+  &:hover {
+    background-color: var(--vermelho);
   }
 `
 
