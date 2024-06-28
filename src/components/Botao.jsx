@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Botao = props => {
   return (
-    <BotaoStyle>
+    <BotaoStyle autoWidth={props.autoWidth}>
       <span className="destaque">{props.texto}</span>
       {props.isLoading || props.children}
     </BotaoStyle>
@@ -11,7 +11,7 @@ export const Botao = props => {
 
 const BotaoStyle = styled.button`
   padding: 0.7em 1em;
-  width: 100%;
+  width: ${props => (props.autoWidth ? 'auto' : '100%')};
 
   font-size: 1.4em;
   font-weight: 600;
