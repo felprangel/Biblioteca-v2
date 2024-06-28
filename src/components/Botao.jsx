@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const Botao = props => {
   return (
     <BotaoStyle autoWidth={props.autoWidth} className={props.className}>
-      <span className="destaque">{props.texto}</span>
       {props.isLoading || props.children}
     </BotaoStyle>
   )
@@ -25,8 +24,5 @@ const BotaoStyle = styled.button`
   transition: 150ms linear;
   &:hover {
     background-color: var(--cinza-escuro);
-  }
-  .destaque {
-    text-transform: uppercase;
   }
 `
