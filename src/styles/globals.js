@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
         --branco: #FFFBFB;
         --cinza: #F0EEF1;
         --cinza-escuro: #D8D8D8;
+        --vermelho: #FC3D39;
     }
 
     * {
