@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 import { Botao } from '@/components/Botao'
 import Cabecalho from '@/components/Cabecalho'
+import CardLivro from '@/components/CardLivro'
 
 const PaginaInicial = () => {
   return (
@@ -11,6 +12,9 @@ const PaginaInicial = () => {
         <ContainerBotao>
           <Botao>+ Adicionar Livro</Botao>
         </ContainerBotao>
+        <ContainerCards>
+          <CardLivro titulo="O Senhor dos Anéis" autor="J. R. R. Tolkien" paginas={1200} status="Lendo" />
+        </ContainerCards>
       </Main>
     </Container>
   )
@@ -32,6 +36,13 @@ const ContainerBotao = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+`
+
+const ContainerCards = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  padding: 0em 7em 2em 7em;
+  gap: 40px;
 `
 
 export default PaginaInicial
