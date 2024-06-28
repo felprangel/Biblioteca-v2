@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Botao = props => {
   return (
-    <BotaoStyle autoWidth={props.autoWidth}>
+    <BotaoStyle autoWidth={props.autoWidth} className={props.className}>
       <span className="destaque">{props.texto}</span>
       {props.isLoading || props.children}
     </BotaoStyle>
