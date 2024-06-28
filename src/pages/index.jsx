@@ -10,7 +10,7 @@ const PaginaInicial = () => {
       <Cabecalho />
       <Main>
         <ContainerBotao>
-          <Botao>+ Adicionar Livro</Botao>
+          <Botao autoWidth>+ Adicionar Livro</Botao>
         </ContainerBotao>
         <ContainerCards>
           <CardLivro titulo="O Senhor dos Anéis" autor="J. R. R. Tolkien" paginas={1200} status="Lendo" />
@@ -36,6 +36,7 @@ const ContainerBotao = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1.5em 0;
 `
 
 const ContainerCards = styled.div`
