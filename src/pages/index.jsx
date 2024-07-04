@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Botao } from '@/components/Botao'
 import Cabecalho from '@/components/Cabecalho'
 import CardLivro from '@/components/CardLivro'
+import ModalFormLivro from '@/components/ModalFormLivro'
 
 const PaginaInicial = () => {
   return (
@@ -15,6 +16,7 @@ const PaginaInicial = () => {
         <ContainerCards>
           <CardLivro titulo="O Senhor dos Anéis" autor="J. R. R. Tolkien" paginas={1200} status="Lendo" />
         </ContainerCards>
+        <ModalFormLivro />
       </Main>
     </Container>
   )
